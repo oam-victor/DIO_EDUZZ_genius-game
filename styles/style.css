@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(231, 215, 213);;
+}
+
+#main-container{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "left right";
+    width: 100%;
+}
+
+#status{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: left;
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px black solid;
+    justify-self: end;
+    align-self: center;
+}
+
+#start{
+    order: 1;
+    border: 1px solid black;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    background-color: rgb(202, 245, 138);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px;
+    transition: 0.2s;
+}
+
+#start:active{
+    border: 2px solid black;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#score{
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    padding: 5px 15px 5px 15px;
+    background-color: rgb(138, 175, 245);
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#correct{
+    display: none;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    padding: 5px 15px 5px 15px;
+    background-color: green;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#wrong{
+    display:none;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+    padding: 5px 15px 5px 15px;
+    background-color: red;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+
+#genius{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "greena reda" "yellowa bluea";
+    grid-gap: 10px;
+    height: 600px;
+    width: 600px;
+    border-radius: 100%;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+}
+
+#blue{
+    grid-area: bluea;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    box-shadow: -2px -2px 5px 0px;
+    transition: .3s;
+}
+
+#red{
+    grid-area: reda;
+    background-color:red;
+    border-top-right-radius:  100%;
+    box-shadow: -2px 2px 5px 0px;
+    transition: .3s;
+}
+
+#yellow{
+    grid-area: yellowa;
+    background-color: yellow;
+    border-bottom-left-radius: 100%;
+    box-shadow: 2px -2px 5px 0px;
+    transition: .3s;
+}
+
+#green{
+    grid-area: greena;
+    background-color: green;
+    border-top-left-radius: 100%;
+    box-shadow: 2px 2px 5px 0px;
+    transition: .3s;
+}
+
+.quarters{
+    border: 0.5px dotted black;
+}
+/* 
+#red:hover{
+    box-shadow:  0 0 10px 1px rgb(255, 0, 0), 0 0 30px rgb(233, 60, 60);
+}
+
+#blue:hover{
+    box-shadow:  0 0 10px 1px blue, 0 0 30px rgb(39, 39, 255);
+}
+
+#yellow:hover{
+    box-shadow:  0 0 10px 1px yellow, 0 0 30px rgb(255, 255, 123);
+}
+
+#green:hover{
+    box-shadow:  0 0 10px 1px green, 0 0 30px rgb(67, 126, 67);
+} */
+
+#red:active{
+    width: 99.8%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#blue:active{
+    width: 99.8%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#yellow:active{
+    width: 99.8%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px;
+}
+
+#green:active{
+    width: 99.8%;
+    border: 1px solid black;
+    box-shadow: 0px 0px 0px 0px;
+}
